@@ -4,8 +4,8 @@ RSpec.describe Post, type: :model do
   #pending "add some examples to (or delete) #{__FILE__}"
   describe "creation" do
     before do
-      user = User.create(email: "test@test.com", password: "asdfasdf", password_confirmation: "asdfasdf", first_name: "John", last_name: "Doe")
-      @post = Post.create(date: Date.today, rationale: "Anything", user_id: user.id)
+      user = FactoryBot.create(:user)
+      @post = FactoryBot.create(:post)
     end
     it "can be created" do
       expect(@post).to be_valid
