@@ -15,7 +15,7 @@ class PostsController < ApplicationController
         if post.save 
             redirect_to post, notice: 'Your post was created successfully'
         else 
-            render :new
+            redirect_to new_post_path, notice: 'Date and Rationale cannot be empty'
         end
     end
 
