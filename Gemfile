@@ -59,3 +59,5 @@ end
 gem 'devise', '~> 4.2'
 gem 'bootstrap', '~> 4.5.0'
 gem 'jquery-rails'
+gem 'administrate'
+gem 'bourbon', '~> 4.2', '>= 4.2.6'
