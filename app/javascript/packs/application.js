@@ -23,5 +23,5 @@ $(document).ready(function() {
       $('#notice_wrapper').fadeOut("up", function() {
         $(this.remove());
       });
-    }, 3500);
+    }, 2500);
   });
